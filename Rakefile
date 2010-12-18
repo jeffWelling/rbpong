@@ -1,4 +1,5 @@
 task :test , [:load_dir] do |t,args|
+  $: << File.dirname(File.expand_path(__FILE__))+"/"
   require "rubygems"
   require "rubygame"
   require "test/unit"
